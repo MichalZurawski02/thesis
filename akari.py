@@ -5,7 +5,7 @@ from akari_io import get_from_file, print_puzzle
 from akari_model import Akari, State
 
 
-file_path = 'akari_data/akari7.txt'
+file_path = 'akari_data/akari20.txt'
 
 puzzle = Akari(get_from_file(file_path))
 
