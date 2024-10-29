@@ -35,7 +35,7 @@ function is_solved(puzzle, unlit, solution)
     for y in 1:length(puzzle)
         for x in 1:length(puzzle[y])
             if 2 < Int(puzzle[y][x]) < 7
-                allneighbors = neighbors(puzzle, x, y)                
+                allneighbors = neighbors(puzzle, y, x)      
                 if count(n -> n in solution, allneighbors) != Int(puzzle[y][x]) - 2
                     return false
                 end
@@ -49,7 +49,7 @@ function can_be_solved(puzzle, solution, possible)
     for y in 1:length(puzzle)
         for x in 1:length(puzzle[y])
             if 2 < Int(puzzle[y][x]) < 7
-                allneighbors = neighbors(puzzle, x, y)
+                allneighbors = neighbors(puzzle, y, x)
                 number = Int(puzzle[y][x]) - 2 - count(n -> n in solution, allneighbors)
 
                 if number > count(n -> n in possible, allneighbors)
@@ -130,9 +130,8 @@ function solve(puzzle)
             end
         end
     end
-    light_up(puzzle,)
 
-    #backtrack(puzzle, unlit, possible, [])
+    backtrack(puzzle, unlit, possible, [])
 
 end
 
