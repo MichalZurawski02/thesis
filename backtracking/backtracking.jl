@@ -28,31 +28,38 @@ function neighbors(puzzle, y, x)
     return neighbors
 end
 
-function constraint_status(puzzle, solution, possible)
-    for y in 1:length(puzzle)
-        for x in 1:length(puzzle[y])
-            if 2 < Int(puzzle[y][x]) < 7
-                allneighbors = neighbors(puzzle, x, y)
-                number = Int(puzzle[y][x]) - 2 - count(n -> n in solution, allneighbors)
-                if number > count(n -> n in possible, allneighbors)
-                    return -1
-                end
-            end
-        end
+function is_solved(puzzle, unlit, solution)
+    if !isempty(unlit)
+        return false
     end
-
     for y in 1:length(puzzle)
         for x in 1:length(puzzle[y])
             if 2 < Int(puzzle[y][x]) < 7
                 allneighbors = neighbors(puzzle, x, y)                
                 if count(n -> n in solution, allneighbors) != Int(puzzle[y][x]) - 2
-                    return 0
+                    return false
+                end
+            end
+        end
+    end
+    return true
+end
+
+function can_be_solved(puzzle, solution, possible)
+    for y in 1:length(puzzle)
+        for x in 1:length(puzzle[y])
+            if 2 < Int(puzzle[y][x]) < 7
+                allneighbors = neighbors(puzzle, x, y)
+                number = Int(puzzle[y][x]) - 2 - count(n -> n in solution, allneighbors)
+
+                if number > count(n -> n in possible, allneighbors)
+                    return false
                 end
             end
         end
     end
     
-    return 1
+    return true
 end
 
 
@@ -87,22 +94,13 @@ function light_up(puzzle, y, x, unlit, possible, solution)
 end
 
 function backtrack(puzzle, unlit, possible, solution)
-    println(solution)
-    println()
-    println(unlit)
-    println()
-    println(possible)
-    println()
-    println()
-
-
-    if isempty(unlit) && constraint_status(puzzle, solution, possible) == 1
+    if is_solved(puzzle, unlit, solution)
         print(solution)
         println()
         return
     end
 
-    if isempty(possible) || constraint_status(puzzle, solution, possible) == -1
+    if isempty(possible) || !can_be_solved(puzzle, solution, possible)
         return
     end
 
@@ -110,6 +108,7 @@ function backtrack(puzzle, unlit, possible, solution)
     unlit_copy, possible_copy = copy(unlit), copy(possible)
 
     light_up(puzzle, eval_y, eval_x, unlit, possible, solution)
+
     push!(solution, (eval_y, eval_x))
     backtrack(puzzle, unlit, possible, solution)
 
@@ -131,8 +130,9 @@ function solve(puzzle)
             end
         end
     end
-    
-    backtrack(puzzle, unlit, possible, [])
+    light_up(puzzle,)
+
+    #backtrack(puzzle, unlit, possible, [])
 
 end
 
