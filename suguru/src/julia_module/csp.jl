@@ -19,7 +19,6 @@ end
 
 
 
-# Inference Functions
 function revise(csp::CSP, Xi, Xj, removals)
     revised = false
     for x in csp.curr_domains[Xi]
@@ -109,7 +108,6 @@ end
 
 
 
-# Variable ordering
 function num_unassigned_in_block(csp::CSP, var, assignment)
     block = find_block(csp, var)
     unassigned_vars = [v for v in block if !(v in keys(assignment))]
@@ -122,7 +120,7 @@ function find_block(csp::CSP, var)
             return block
         end
     end
-    error("Variable not found in any block: $var")
+    error("Błąd. Nie znaleziono zmiennej: $var")
 end
 
 function break_tie_by_block(csp::CSP, vars, assignment)
@@ -184,8 +182,6 @@ function lcv(var, assignment, csp::CSP)
 end
 
 
-
-# Backtracking
 function backtracking_search(csp::CSP; variable_heurestic=no_variable_heurestic,
                             value_heurestic=no_value_heurestic, inference=default)
     function backtrack(assignment)

@@ -43,7 +43,7 @@ end
 function parse_args()
     args = Base.ARGS
     if length(args) < 2
-        println("Error: Invalid usage. Correct syntax: julia module_tests.jl <path> <size>")
+        println("Błąd wywołania. Poprawne użycie:  julia module_tests.jl <ścieżka> <rozmiar>")
         exit(1)
     end
     return args[1], parse(Int, args[2])

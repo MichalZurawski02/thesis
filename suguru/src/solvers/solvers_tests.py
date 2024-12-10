@@ -6,7 +6,7 @@ import time
 
 def read_grid_from_file(file_path):
     if not os.path.isfile(file_path):
-        raise ValueError(f"The provided path '{file_path}' is not a valid file.")
+        raise ValueError(f"Błąd")
     
     with open(file_path, 'r') as file:
         file_content = file.read().strip()
@@ -25,7 +25,6 @@ def read_grid_from_file(file_path):
 def solve_puzzles_from_directory():
     directory_path = input("Ścieżka: ")
     if not os.path.isdir(directory_path):
-        print(f"Error: The provided path '{directory_path}' is not a directory.")
         return
     
     size = int(input("Rozmiar: "))
@@ -52,7 +51,7 @@ def solve_puzzles_from_directory():
                 ilog_results.append((file_name, result, ilog_time))
             
             except Exception as e:
-                print(f"Error processing {file_name}: {e}")
+                print(f"Błąd wczytywania pliku {file_name}: {e}")
 
     results_directory = os.path.join(directory_path, 'results')
     os.makedirs(results_directory, exist_ok=True)
@@ -64,7 +63,7 @@ def solve_puzzles_from_directory():
 def save_results_to_file(results, output_path):
     with open(output_path, 'w') as output_file:
         for file_name, result, time_taken in results:
-            output_file.write(f"{file_name}: {result}, Time: {time_taken:.4f} seconds\n")
+            output_file.write(f"{file_name}: {result}, {time_taken:.4f}\n")
 
 
 if __name__ == "__main__":
