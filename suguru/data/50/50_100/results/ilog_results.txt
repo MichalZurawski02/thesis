@@ -1,0 +1,5 @@
+50_100_3.txt: True, Time: 0.3867 seconds
+50_100_5.txt: True, Time: 0.3631 seconds
+50_100_4.txt: True, Time: 0.3929 seconds
+50_100_2.txt: True, Time: 0.3663 seconds
+50_100_1.txt: True, Time: 0.3755 seconds

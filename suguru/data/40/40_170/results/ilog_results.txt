@@ -1,0 +1,10 @@
+40_170_5.txt: False, Time: 0.1821 seconds
+40_170_8.txt: False, Time: 0.2006 seconds
+40_170_10.txt: False, Time: 0.9969 seconds
+40_170_6.txt: False, Time: 0.1983 seconds
+40_170_2.txt: False, Time: 0.1615 seconds
+40_170_3.txt: False, Time: 0.1656 seconds
+40_170_4.txt: False, Time: 0.1631 seconds
+40_170_1.txt: False, Time: 0.2008 seconds
+40_170_9.txt: False, Time: 0.1897 seconds
+40_170_7.txt: False, Time: 0.2173 seconds

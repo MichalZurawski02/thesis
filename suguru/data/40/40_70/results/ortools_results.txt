@@ -1,0 +1,10 @@
+40_70_1.txt: True, Time: 7.9282 seconds
+40_70_4.txt: True, Time: 7.7547 seconds
+40_70_7.txt: True, Time: 8.8661 seconds
+40_70_5.txt: True, Time: 7.9467 seconds
+40_70_8.txt: True, Time: 7.3260 seconds
+40_70_6.txt: True, Time: 8.1834 seconds
+40_70_2.txt: True, Time: 8.4485 seconds
+40_70_9.txt: True, Time: 8.6507 seconds
+40_70_3.txt: True, Time: 7.9792 seconds
+40_70_10.txt: True, Time: 7.8246 seconds

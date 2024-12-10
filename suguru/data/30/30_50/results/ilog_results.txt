@@ -1,0 +1,15 @@
+30_50_1.txt: True, Time: 0.1155 seconds
+30_50_11.txt: True, Time: 0.1274 seconds
+30_50_13.txt: True, Time: 0.1127 seconds
+30_50_10.txt: True, Time: 0.1509 seconds
+30_50_5.txt: True, Time: 0.1139 seconds
+30_50_4.txt: True, Time: 0.1361 seconds
+30_50_15.txt: True, Time: 0.1118 seconds
+30_50_8.txt: True, Time: 0.1384 seconds
+30_50_3.txt: True, Time: 0.1115 seconds
+30_50_7.txt: True, Time: 0.1376 seconds
+30_50_6.txt: True, Time: 0.1117 seconds
+30_50_14.txt: True, Time: 0.1622 seconds
+30_50_12.txt: True, Time: 0.1198 seconds
+30_50_9.txt: True, Time: 0.1506 seconds
+30_50_2.txt: True, Time: 0.1155 seconds

@@ -1,0 +1,5 @@
+50_300_3.txt: False, Time: 0.5798 seconds
+50_300_1.txt: False, Time: 0.5604 seconds
+50_300_2.txt: False, Time: 1.2008 seconds
+50_300_5.txt: False, Time: 0.5873 seconds
+50_300_4.txt: False, Time: 1.2288 seconds

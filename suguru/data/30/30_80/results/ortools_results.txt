@@ -1,0 +1,15 @@
+30_80_8.txt: True, Time: 1.6356 seconds
+30_80_7.txt: False, Time: 0.4314 seconds
+30_80_15.txt: True, Time: 1.9145 seconds
+30_80_3.txt: True, Time: 1.9898 seconds
+30_80_5.txt: True, Time: 1.6659 seconds
+30_80_6.txt: True, Time: 1.6457 seconds
+30_80_2.txt: True, Time: 1.6140 seconds
+30_80_4.txt: False, Time: 0.4119 seconds
+30_80_9.txt: False, Time: 0.4236 seconds
+30_80_11.txt: False, Time: 0.4643 seconds
+30_80_13.txt: False, Time: 0.4162 seconds
+30_80_14.txt: False, Time: 0.4194 seconds
+30_80_12.txt: False, Time: 0.4352 seconds
+30_80_1.txt: False, Time: 0.4326 seconds
+30_80_10.txt: False, Time: 0.4106 seconds

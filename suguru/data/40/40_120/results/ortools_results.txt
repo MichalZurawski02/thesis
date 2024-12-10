@@ -1,0 +1,10 @@
+40_120_4.txt: True, Time: 4.7793 seconds
+40_120_6.txt: True, Time: 5.0898 seconds
+40_120_8.txt: False, Time: 0.8224 seconds
+40_120_9.txt: True, Time: 4.2490 seconds
+40_120_2.txt: False, Time: 0.7876 seconds
+40_120_3.txt: False, Time: 0.7866 seconds
+40_120_10.txt: False, Time: 0.8155 seconds
+40_120_1.txt: False, Time: 0.7972 seconds
+40_120_5.txt: False, Time: 0.8824 seconds
+40_120_7.txt: False, Time: 0.7899 seconds

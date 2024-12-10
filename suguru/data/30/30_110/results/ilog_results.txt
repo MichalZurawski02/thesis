@@ -1,0 +1,15 @@
+30_110_6.txt: False, Time: 0.0973 seconds
+30_110_3.txt: False, Time: 0.1105 seconds
+30_110_13.txt: False, Time: 0.0878 seconds
+30_110_9.txt: False, Time: 0.1110 seconds
+30_110_1.txt: False, Time: 0.0935 seconds
+30_110_2.txt: False, Time: 0.1122 seconds
+30_110_7.txt: False, Time: 0.0937 seconds
+30_110_14.txt: False, Time: 0.1185 seconds
+30_110_11.txt: False, Time: 0.0939 seconds
+30_110_4.txt: False, Time: 0.1211 seconds
+30_110_15.txt: False, Time: 0.0934 seconds
+30_110_10.txt: False, Time: 0.1303 seconds
+30_110_5.txt: False, Time: 0.0929 seconds
+30_110_12.txt: False, Time: 0.1246 seconds
+30_110_8.txt: False, Time: 0.0879 seconds
