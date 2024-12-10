@@ -1,4 +1,4 @@
-from docplex.cp.model import CpoModel, CpoParam, CpoParameters
+from docplex.cp.model import CpoModel, CpoParameters
 
 class suguru_solver_ilog:
     def __init__(self, m, n, blocks):

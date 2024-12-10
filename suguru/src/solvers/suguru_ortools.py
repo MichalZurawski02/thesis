@@ -45,11 +45,7 @@ class suguru_solver_ortools:
         self.add_variables()
         self.add_neighborhood_constraints()
         solver = cp_model.CpSolver()
-        self.model.AddDecisionStrategy(
-        self.variables.values(),
-        cp_model.CHOOSE_MIN_DOMAIN_SIZE,
-        cp_model.SELECT_MAX_VALUE 
-    )
+
         status = solver.solve(self.model)
         if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
             # print("Solution:")

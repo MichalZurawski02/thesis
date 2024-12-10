@@ -1,6 +1,6 @@
 import os
 from suguru_ortools import suguru_solver_ortools
-from suguru_ilog import suguru_solver_ilog
+from solvers.suguru_ilog import suguru_solver_ilog
 import time
 
 
